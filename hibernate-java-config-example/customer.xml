@@ -1,0 +1,11 @@
+<EXT>
+    <commandName>
+        add_customer_info
+    </commandName>
+    <Input>
+        <Customer id="1" firstName="John" lastName="Doe" email="johndoe@example.com"/>
+    </Input>
+    <OUTPUT>
+        <p n="SONUC"/>
+    </OUTPUT>
+</EXT>

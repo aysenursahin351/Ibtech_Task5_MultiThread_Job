@@ -1,0 +1,45 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+
+    <!-- JDBC Database connection settings -->
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">123</property>
+
+    <!-- JDBC connection pool settings -->
+    <property name="hibernate.connection.pool_size">5</property>
+
+    <!-- Select our SQL dialect -->
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+    <!-- Echo the SQL to stdout -->
+    <property name="hibernate.show_sql">true</property>
+
+    <!-- Set the current session context -->
+    <property name="hibernate.current_session_context_class">thread</property>
+
+    <!-- Manage database schema -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+
+    <!-- dbcp connection pool configuration -->
+    <property name="hibernate.dbcp.initialSize">5</property>
+    <property name="hibernate.dbcp.maxActive">20</property>
+    <property name="hibernate.dbcp.maxIdle">10</property>
+    <property name="hibernate.dbcp.minIdle">5</property>
+    <property name="hibernate.dbcp.maxWait">-1</property>
+
+    <mapping class="net.ibtech.hibernate.model.Customer" />
+    <mapping class="net.ibtech.hibernate.model.Account" />
+    <mapping class="net.ibtech.hibernate.model.Address" />
+    <mapping class="net.ibtech.hibernate.model.Phone" />
+    <mapping class="net.ibtech.hibernate.model.Command" />
+
+
+</session-factory>
+
+
+</hibernate-configuration>

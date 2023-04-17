@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+ 
+  <display-name>hibernate-java-config-example</display-name>
+  
+  <!-- Servlet mapping -->
+  <servlet>
+    <servlet-name>ServletDemo</servlet-name>
+    <servlet-class>net.ibtech.hibernate.servlet.ServletDemo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ServletDemo</servlet-name>
+    <url-pattern>/aa</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default welcome file -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>

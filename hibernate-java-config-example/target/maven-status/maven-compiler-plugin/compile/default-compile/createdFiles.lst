@@ -1,0 +1,7 @@
+net\ibtech\hibernate\App.class
+net\ibtech\hibernate\dao\CustomerDao.class
+net\ibtech\hibernate\model\Customer.class
+net\ibtech\hibernate\model\Address.class
+net\ibtech\hibernate\model\Phone.class
+net\ibtech\hibernate\util\HibernateUtil.class
+net\ibtech\hibernate\model\Account.class
