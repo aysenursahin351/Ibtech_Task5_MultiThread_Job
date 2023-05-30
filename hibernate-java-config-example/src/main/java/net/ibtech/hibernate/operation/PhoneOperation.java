@@ -50,11 +50,9 @@ public class PhoneOperation {
 
  		if (numberValue != null) {
  		    phone.setNumber(numberValue.toString());
- 		    System.out.println("AAAAAAAAAAAAAAAAA");
  		}
  		if (TYPEValue != null) {
  	 		phone.setType( (xbag.getValue(XBagKey.TYPE)).toString());
- 		    System.out.println("BBBBBBBBBBBBBBB");
  		}
  		//phone.setNumber( (String) (xbag.getValue(XBagKey.NUMBER)));
  		
